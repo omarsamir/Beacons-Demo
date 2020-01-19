@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeaconsViewController" customModule="BeaconsDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="beaconsTableView" destination="MIh-MP-MEg" id="Wbk-qt-Gg1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MIh-MP-MEg">
+                    <rect key="frame" x="10" y="64" width="355" height="593"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active Beacons Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcw-Id-0EB">
+                    <rect key="frame" x="10" y="30" width="355" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MIh-MP-MEg" firstAttribute="trailing" secondItem="Vcw-Id-0EB" secondAttribute="trailing" id="Csw-cZ-ThF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MIh-MP-MEg" secondAttribute="bottom" constant="10" id="Nfn-yT-WLt"/>
+                <constraint firstItem="Vcw-Id-0EB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="YOz-m5-DDj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vcw-Id-0EB" secondAttribute="trailing" constant="10" id="c2D-Nw-uQs"/>
+                <constraint firstItem="Vcw-Id-0EB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="evC-Eo-mbc"/>
+                <constraint firstItem="MIh-MP-MEg" firstAttribute="leading" secondItem="Vcw-Id-0EB" secondAttribute="leading" id="rbm-2T-7gc"/>
+                <constraint firstItem="MIh-MP-MEg" firstAttribute="top" secondItem="Vcw-Id-0EB" secondAttribute="bottom" constant="10" id="sVA-R3-F3O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
